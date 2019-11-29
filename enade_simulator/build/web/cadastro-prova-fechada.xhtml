@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<ui:decorate 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui"
+    template="template.xhtml"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+            <h1>Cadastrar Prova Fechada</h1>
+    <hr/>
+    <b:form id="questoesForm" horizontal="true" style="width: 60%">
+        
+        <b:inputTextarea label="Enunciado da questão:" colMd="10" labelColMd="2"  id="enuciado" value="">
+        </b:inputTextarea>
+        
+        <b:inputTextarea label="Opção A:" colMd="10" labelColMd="2"  id="opA" value="">
+        </b:inputTextarea>
+        <b:inputTextarea label="Opção B:" colMd="10" labelColMd="2"  id="opB" value="">
+        </b:inputTextarea>
+        <b:inputTextarea label="Opção C:" colMd="10" labelColMd="2"  id="opC" value="">
+        </b:inputTextarea>
+        <b:inputTextarea label="Opção D:" colMd="10" labelColMd="2"  id="opD" value="">
+        </b:inputTextarea>
+        <b:inputTextarea label="Opção E:" colMd="10" labelColMd="2"  id="opD" value="">
+        </b:inputTextarea>
+
+        <b:inputTextarea label="Gabarito:" colMd="10" labelColMd="2"  id="gabarito" value="">
+        </b:inputTextarea>
+        <b:selectOneMenu value="" colMd="2" labelColMd="2" required="true" label="Tipo de Questão:" >
+           
+            <f:selectItem itemLabel="Conhecimento Específico" itemValue="1" />
+            <f:selectItem itemLabel="Conhecimentos Gerais " itemValue="2" />
+        </b:selectOneMenu>
+
+        <b:commandButton value="Salvar" action="" process="@form" colMd="6" update="questoesForm" />
+    </b:form>
+</ui:decorate>

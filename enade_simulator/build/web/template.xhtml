@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Enade Simulator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <b:navBar inverse="true" >
+
+            <b:navbarLinks>
+                <b:navLink value="" href="#"><img src="img/enade.jpg" alt="logo do enade" style="height: 40px;width: 100px;position: center"/></b:navLink>
+                <b:navLink value="Simulado" href="#" style="padding-top: 15px;"></b:navLink>
+                <b:navLink value="Gerenciar" href="#" style="padding-top: 15px;"></b:navLink>
+                <b:dropMenu value="Cadastrar Questões"  style="padding-top: 15px;">
+                <b:navLink value="Questões Fechadas" href="cadastro-prova-fechada.xhtml"></b:navLink>
+                    <b:navLink value="Questões Abertas" href="#"></b:navLink>
+                    <b:navLink value="Another action" href="#"></b:navLink>
+                </b:dropMenu>
+                <b:navLink value="Cadastrar Usuário" href="cadastro-usuario.jsf" style="padding-top: 15px;"></b:navLink>
+                <b:navLink value="logout" href="login.jsf" style="padding-top: 15px;"></b:navLink>
+
+            </b:navbarLinks>
+        </b:navBar>
+
+
+        <ui:insert></ui:insert>
+    </h:body>
+</html>
